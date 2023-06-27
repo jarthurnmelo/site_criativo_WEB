@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.container {
+    width: 100%;
+    height: 100%;
+    background: #03453d;
+}
+.menu ul {
+    display: inline-flex;
+    margin: 50px;
+}
+.menu ul li {
+    list-style: none;
+    margin: 0 20px;
+    color: #d6ce8b;
+    cursor: pointer;
+}
+.logotipo img {
+    width: 20%;
+    margin-top: -7px;
+    margin-right: 10%;
+}
+.active {
+    color: #8fd053 !important;
+}
+.botao-de-cadastro {
+    top: 40px;
+    right: 80px;
+    position: absolute;
+    text-decoration: none;
+    color: whitesmoke;
+    border: 2px solid transparent;
+    border-radius: 20px;
+    background-image: linear-gradient(#1b325f, #001f36), radial-gradient(circle at top left, #2c1001, #8fd053);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+}
+.botao-de-cadastro span {
+    padding: 7px 20px;
+    display: block;
+}
+.bannerDoSite {
+    color: #d6ce8b;
+    position: relative;
+    width: 80%;
+    height: 70%;
+    left: 5%;
+    top: 25%;
+}
+#contain-er {
+    display: inline-block;
+    position: relative;
+    top: 145px;
+    right: 20px;
+    font-size: 40px;
+    color: black;
+    text-shadow: 0px 0px 5px black;
+}
+.tradingview-widget-container__widget1 {
+    display: inline-block;
+    box-align: right;
+}
+#linkscurtos {
+    right: 0;
+    bottom: 0;
+    position: fixed;
+    background: linear-gradient(to right, #4980f0, #147501);
+}
+#linkscurtos ul{
+    display: inline-flex;
+    margin: 30px auto;
+    text-align: center;
+}
+#linkscurtos ul li{
+    list-style: none;
+    margin: 0 50px;
+    cursor: pointer;
+}
+#linkscurtos ul li .fa{
+    font-size: 25px;
+    color: whitesmoke;
+}
+#linkscurtos ul li p{
+    margin-top: 15px;
+    font-size: 10px;
+    color: whitesmoke
+}
+
+.content {
+    padding: 16px;
+}
+  
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+  
+.sticky + .content {
+    padding-top: 60px;
+}
