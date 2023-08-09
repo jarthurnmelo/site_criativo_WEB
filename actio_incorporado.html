@@ -1,22 +1,23 @@
 <!DOCTYPE html>
-    <html>
+    <html lang="en">
         <head>
             <title>Actio: acesso à ações e bolsa de valores Web</title>
+            <meta charset="UTF-8">
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
             <link rel="stylesheet" href="actio_cssincorporado.css">
             <link rel="icon" type="favicon" href="/.vscode/favicon.ico">
             <script src="https://kit.fontawesome.com/07a56f85e8.js" crossorigin="anonymous"></script>
         </head>
         <body>
-            <div class="container">
+            <div id="container">
                 <div class="menu">
                     <ul>
                         <li class="logotipo"> <img src="Stonks_emoji.png"> </li>
-                        <li><a href="http://127.0.0.1:5500/.vscode/index.html">Início</a></li>
-                        <li>Quem somos</li>
-                        <li class="active">Ações / Bolsa de valores</li>
-                        <li>Fontes</li>
-                        <li><a href="#" class="botao-de-cadastro"><span>Cadastre-se</span></a></li>
+                        <li><a href="index.html"><b>Início</b></a></li>
+                        <li><b>Quem somos</b></li>
+                        <li class="active"><b>Ações / Bolsa de valores</b></li>
+                        <li><b>Fontes</li>
+                        <li><a href="#" class="botao-de-cadastro"><span></b>Cadastre-se</b></span></a></li>
                     </ul>
                 </div>
             </div>
@@ -24,7 +25,22 @@
                     <div class="aplicacao-de-texto">
                         <div class="tradingview-widget-container">
                             <div class="tradingview-widget-container__widget"></div>
-                                <div class="tradingview-widget-copyright"><a href="https://br.tradingview.com/" rel="noopener nofollow" target="_blank"></a></div>
+                            <div class="tradingview-widget-copyright"><a href="https://br.tradingview.com/" rel="noopener nofollow" target="_blank"></a></div>
+                            <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-technical-analysis.js" async>
+                            {
+                            "interval"; "5m",
+                            "width"; "70%",
+                            "isTransparent"; false,
+                            "height"; "70%",
+                            "symbol"; "FX:EURUSD",
+                            "showIntervalTabs"; true,
+                            "locale"; "br",
+                            "colorTheme"; "light"
+                            }
+                            </script>
+                        </div>
+                        <div class="tradingview-widget-container1">
+                            <div class="tradingview-widget-container__widget1"></div>
                                     <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-market-quotes.js" async>
                                                             {
                                                             "title"; "Ações",
@@ -71,15 +87,15 @@
                                                                 },
                                                                 {
                                                                     "name": "NASDAQ:GOOGL",
-                                                                    "displayName": "Google Inc"
+                                                                    "displayName": "Google Inc."
                                                                 },
                                                                 {
                                                                     "name": "NASDAQ:MSFT",
-                                                                    "displayName": "Microsoft Corp"
+                                                                    "displayName": "Microsoft Corp."
                                                                 },
                                                                 {
                                                                     "name": "NASDAQ:FB",
-                                                                    "displayName": "Meta Platforms, Inc"
+                                                                    "displayName": "Plataformas Meta, Inc"
                                                                 },
                                                                 {
                                                                     "name": "NYSE:ORCL",
@@ -121,11 +137,27 @@
                                                         }
                                     </script>
                         </div>
-                        <div class="tradingview-widget-container1">
-                            <div class="tradingview-widget-container__widget1"></div>
-                                <div class="tradingview-widget-copyright"><a href="https://br.tradingview.com/" rel="noopener nofollow" target="_blank"></a></div>
+                        <script>
+                            function increaseFontSize() {
+                              var currentSize = parseFloat(document.body.style.fontSize) || 16;
+                              document.body.style.fontSize = (currentSize + 2) + 'px';
+                            }
+                            
+                            function decreaseFontSize() {
+                              var currentSize = parseFloat(document.body.style.fontSize) || 16;
+                              document.body.style.fontSize = (currentSize - 2) + 'px';
+                            }
+                          </script>
+                        </head>
+                            <div class="font-size-control">
+                                <button onclick="decreaseFontSize()"><p class="menos">-</p></button>
+                                <button onclick="increaseFontSize()"><p class="mais">+</p></button>
+                            </div>
+
+                        <div class="tradingview-widget-container2">
+                            <div class="tradingview-widget-container__widget2"></div>
                                     <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-market-quotes.js" async>
-                                                                {
+                                                            {
                                                                 "width"; 770,
                                                                 "height"; 450,
                                                                 "showSymbolLogo"; true,
@@ -399,10 +431,20 @@
                                                                     }
                                                                     ]
                                                                 }
-                                                                ],
+                                                                ]
                                                             }
                                     </script>
                         </div>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        
                     </div>
                 </div>
                 <div id="linkscurtos">
@@ -410,7 +452,8 @@
                         <li><i class="fa fa-share-alt"></i><p>COMPARTILHE</p></li>
                         <li><i class="fa fa-audio-description"></i><p>NOTICIÁRIO</p></li>
                         <li><i class="fa fa-cog"></i><p>ANALÍTICO</p></li>
-                        <li><i class="fa fa-chart-line"></i><p>COTAÇÃO</p></li>
+                        <li><a href="https://jarthurnmelo.github.io/site_criativo_WEB/actio_incorporado.html"></a><i class="fa fa-chart-line"></i><p>COTAÇÃO</p></li>
+                        <li><p>Feito por José Arthur</p></li>
                     </ul>
                 </div>
         </body>

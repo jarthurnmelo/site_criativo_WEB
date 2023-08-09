@@ -3,32 +3,59 @@
     padding: 0;
     font-family: sans-serif;
 }
-.container {
-    width: 100%;
+.pagina {
+    margin: 0;
+    padding: 0;
     height: 100%;
+    width: 100%;
+    display: fixed;
+    font-family: sans-serif;
+}
+.container {
+    box-align: center;
+    text-align: center;
+    width: 100%;
+    height: 5%;
     background: #03453d;
 }
 .menu ul {
     display: inline-flex;
-    margin: 50px;
 }
 .menu ul li {
+    height: 150%;
+    width: 150%;
+    padding: 2%;
     list-style: none;
-    margin: 0 20px;
+    margin-top: 0%;
+    text-align-last: center;
+    margin-bottom: 1%;
     color: #d6ce8b;
     cursor: pointer;
 }
+a {
+    color: #d6ce8b;
+    text-underline-offset: 5000000000000px;
+}
+.font-size-control {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    z-index: 9999;
+    font-size: 500%;
+}
 .logotipo img {
-    width: 20%;
-    margin-top: -7px;
+    vertical-align: sub;
+    width: 3%;
+    height: 3%;
+    margin-top: 2%;
     margin-right: 10%;
 }
 .active {
     color: #8fd053 !important;
 }
 .botao-de-cadastro {
-    top: 40px;
-    right: 80px;
+    top: 4%;
+    right: 8%;
     position: absolute;
     text-decoration: none;
     color: whitesmoke;
@@ -50,55 +77,46 @@
 }
 .stock-value {
     z-index: -1;
-    width: 250%;
-    height: 815px;
+    width: 125%;
+    height: 109%;
     overflow: hidden;
-    position: center;
+    position: fixed;
 }
-.aplicacao-de-texto {
+.contain-er {
+    display: inline-block;
+    position: relative;
+}
+figcaption {
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    font-size: 40px;
+    color: black;
+    text-shadow: 0px 0px 5px black;
+}
+.textoGeral {
     width: 50%;
-    float: left;
 }
-.aplicacao-de-texto h1 {
+.textoGeral h1 {
     width: 650px;
     position: relative;
     color: whitesmoke;
     font-size: 63px;
     margin-left: 40px;
 }
-.aplicacao-de-texto h2 {
+.textoGeral h2 {
     width: 650px;
     position: relative;
     color: white;
     font-size: 33px;
     margin-left: 40px;
 }
-.aplicacao-de-texto p {
+.textoGeral p {
     width: 650px;
     line-height: 35px;
     font-size: 35px;
     margin: 30px 0 30px 40px;
     color: orange;
-}
-#contain-er {
-    display: inline-block;
-    position: relative;
-}
-#contain-er figcaption {
-    position: absolute;
-    top: 145px;
-    right: 20px;
-    font-size: 40px;
-    color: black;
-    text-shadow: 0px 0px 5px black;
-}
-.imagem-do-site {
-    z-index: 1;
-    size: 300%;
-    width: 50%;
-    float: right;
-    margin-top: -30px;
-    padding-left: 10px;
 }
 .botao-comecar {
     margin-left: 40px;
@@ -113,6 +131,7 @@
     background-origin: border-box;
     background-clip: content-box, border-box;
     text-align: center;
+    cursor: pointer;
 }
 .botao-comecar-interno .fa {
     padding: 18px 0;
@@ -126,11 +145,23 @@ small {
     color: #9cc4e4;
     letter-spacing: 3px;
 }
+.imagem-do-site {
+    z-index: 1;
+    height: 200px;
+    margin-top: 10%;
+    margin-left: 215%;
+    display: inline-block;
+    top: 200%
+}
+.imagem-intranet {
+    width: auto;
+    max-height: 100%;
+}
 #linkscurtos {
     right: 0;
     bottom: 0;
     position: fixed;
-    background: linear-gradient(to right, #4980f0, #147501);
+    background: linear-gradient(to right, #f04949, #03453d);
 }
 #linkscurtos ul{
     display: inline-flex;
@@ -148,10 +179,9 @@ small {
 }
 #linkscurtos ul li p{
     margin-top: 15px;
-    font-size: 10px;
+    font-size: 80%;
     color: whitesmoke
 }
-
 .content {
     padding: 16px;
 }

@@ -10,49 +10,101 @@
         <body>
             <div class="container">
                 <div class="menu">
+                    <a class="logotipo"><img src="Stonks_emoji.png"></a>
                     <ul>
-                        <li class="logotipo"> <img src="Stonks_emoji.png"> </li>
-                        <li class="active">Início</li>
-                        <li>Quem somos</li>
-                        <li><a href="actio_incorporado.html">Ações / Bolsa de valores</li>
-                        <li>Fontes</li>
-                        <li><a href="#" class="botao-de-cadastro"><span>Cadastre-se</span></a></li>
+                        <li class="logotipo"><img src="Stonks_emoji.png"></li>
+                        <li class="active" style="height: 600%; width: 600%; margin-left: 10%"><b>Início</b></li>
+                        <li style="height: 600%; width: 600%; margin-left: 5%"><b>Quem somos</b></li>
+                        <li style="height: 600%; width: 600%; margin-left: 5%"><a href="actio_incorporado.html"><b>Ações / Bolsa de Valores</b></a></li>
+                        <li style="height: 600%; width: 600%; margin-left: 5%"><b>Fontes</b></li>
+                        <li style="height: 600%; width: 600%; margin-left: 5%"><a href="#" class="botao-de-cadastro"><span><b>Cadastre-se</b></span></a></li>
                     </ul>
                 </div>
-                    <div class="bannerDoSite">
-                        <div class="aplicacao-de-texto">
-                            <figure id="contain-er">
-                                <img class="stock-value" src="stock-value.png">
-                                    <figcaption>
-                                        <div class="imagem-do-site">
-                                            <img src="intranet-providers-uk-CONTENT-image.png">
-                                        </div>
-                                        <h1>Actio</h1>
-                                        <br> <br>
-                                        <h2>O site de cotação e ações da bolsa<br>de valores (sem fins lucrativos!)</h2>
-                                        <br>
-                                        <p>Nossa plataforma promete facilitar a visualização<br>da cotação das suas empresas favoritas</p>
-                                        <div class="botao-comecar">
-                                            <div class="botao-comecar-interno">
-                                                <i class="fa-solid fa-play"></i>
-                                            </div>
-                                            <small>
-                                                <b>DESCUBRA MAIS</b>
-                                            </small>
-                                        </div>
-                                    </figcaption>
-                            </figure>
+            </div>
+            <div class="tradingview-widget-container">
+                <div class="tradingview-widget-container__widget1"></div>
+                <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js" async>
+                {
+                    "symbols"; [
+                    {
+                    "proName": "FOREXCOM:SPXUSD",
+                    "title": "S&P 500"
+                    },
+                    {
+                    "proName": "FOREXCOM:NSXUSD",
+                    "title": "Dolar Estadunidense 100"
+                    },
+                    {
+                    "proName": "FX_IDC:EURUSD",
+                    "title": "Euro / DolarEstadunidense"
+                    },
+                    {
+                    "proName": "BITSTAMP:BTCUSD",
+                    "title": "Bitcoin"
+                    },
+                    {
+                    "proName": "BITSTAMP:ETHUSD",
+                    "title": "Ethereum"
+                    }
+                    ],
+                "showSymbolLogo"; true,
+                "colorTheme"; "dark",
+                "isTransparent"; false,
+                "displayMode"; "adaptive",
+                "locale"; "br"
+                }
+                </script>
+            </div>
+            <div class="bannerDoSite">
+                <script>
+                    function increaseFontSize() {
+                      var currentSize = parseFloat(document.body.style.fontSize) || 16;
+                      document.body.style.fontSize = (currentSize + 2) + 'px';
+                    }
+                    
+                    function decreaseFontSize() {
+                      var currentSize = parseFloat(document.body.style.fontSize) || 16;
+                      document.body.style.fontSize = (currentSize - 2) + 'px';
+                    }
+                  </script>
+                </head>
+                  <div class="font-size-control">
+                    <button onclick="decreaseFontSize()"><p class="menos">-</p></button>
+                    <button onclick="increaseFontSize()"><p class="mais">+</p></button>
+                  </div>
+
+                <figure class="contain-er"><img class="stock-value" src="stock-value.png">
+                    <figcaption>
+                        <div class="textoGeral">
+                            <h1><b>Actio</b></h1>
+                            <br><br>
+                            <h2>O site de cotação e ações da bolsa<br>de valores (sem fins lucrativos!)</h2>
+                            <br>
+                            <p>Nossa plataforma promete facilitar a visualização<br>da cotação das suas empresas favoritas</p>
                         </div>
+                        <br>
+                        <div class="botao-comecar">
+                            <div class="botao-comecar-interno">
+                                <i class="fa-solid fa-play" style="color: #45a843"></i>
+                            </div>
+                            <small>
+                                <b>DESCUBRA MAIS</b>
+                            </small>
+                        </div>
+                    </figcaption>
+                    <div class="imagem-do-site">
+                        <img src="intranet-providers-uk-CONTENT-image.png" alt="imagem-intranet">
                     </div>
-                </div>
-                <div id="linkscurtos">
-                    <ul>
-                        <li><i class="fa fa-share-alt"></i><p>COMPARTILHE</p></li>
-                        <li><i class="fa fa-audio-description"></i><p>NOTICIÁRIO</p></li>
-                        <li><i class="fa fa-cog"></i><p>ANALÍTICO</p></li>
-                        <li><a href="actio_incorporado.html"><i class="fa fa-chart-line"></i><p>COTAÇÃO</p></a></li>
-                    </ul>
-                </div>
+                </figure>
+            </div>
+            <div id="linkscurtos">
+                <ul>
+                    <li><i class="fa fa-share-alt"></i><p>COMPARTILHE</p></li>
+                    <li><i class="fa fa-audio-description"></i><p>NOTICIÁRIO</p></li>
+                    <li><i class="fa fa-cog"></i><p>ANALÍTICO</p></li>
+                    <li><a href="https://jarthurnmelo.github.io/site_criativo_WEB/actio_incorporado.html"><i class="fa fa-chart-line"></i><p>COTAÇÃO</p></a></li>
+                    <li><p>Feito por José Arthur</p></li>
+                </ul>
             </div>
         </body>
     </html>
