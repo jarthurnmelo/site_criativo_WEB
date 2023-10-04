@@ -1,0 +1,176 @@
+*{
+    box-sizing: border-box;
+}
+
+body
+{
+    margin: 0%;
+    font-family: 'Times New Roman', Times, serif;
+    background: #f1f1f1;
+}
+
+.dark-mode
+{
+    background: #333;
+}
+
+.header
+{
+    padding: 30px;
+    text-align: center;
+    color: #DAA520;
+    background: #02693c;
+}
+
+.header h1
+{
+    font-size: 50px;
+}
+
+.topnav
+{
+    background-color: #004d23;
+}
+
+.topnav a
+{
+    float: left;
+    display: block;
+    color: #317e3e;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.topnav a:hover
+{
+    background-color: #a1fff2;
+    color: black;
+}
+
+.leftcolumn
+{   
+    float: left;
+    width: 75%;
+}
+
+.rightcolumn
+{
+    float: left;
+    width: 25%;
+    padding-left: 20px;
+}
+
+.imgint
+{
+    background-color: #aaa;
+    overflow: hidden;
+    width: 100%;
+    padding: 20px;
+}
+
+.imagem-intranet 
+{
+    height: fit-content;
+}
+
+@media only screen and (max-width: 480px)
+{
+    .imagem-intranet 
+    {
+      width: 12vw;
+    }
+}
+
+.card
+{
+    background-color: #038757;
+    color: white;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.container::after
+{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.rodape
+{
+    margin-top: 120vh;
+    border-top: 0%;
+    padding: 0%;
+}
+
+footer
+{
+    padding: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    background: #004d23;
+}
+
+    footer ul
+    {
+        display: inline-block;
+        margin: 30px auto;
+        text-align: left;
+    }
+
+        footer a
+        {
+            display: inline-flex;
+            color: #FFD700;
+            text-decoration: none;
+            padding: 20px;
+        }
+
+            #linkscurtos ul a .fa
+            {
+                font-size: 25px;
+                color: whitesmoke;
+            }
+
+#linkscurtos ul a p
+{
+    margin-top: 15px;
+    font-size: 80%;
+    color: whitesmoke;
+}
+
+.content
+{
+    padding: 16px;
+}
+
+@media screen and (max-width: 800px)
+{
+    .topnav
+    {
+        font-size: 130%;
+    }
+    .leftcolumn, .rightcolumn
+    {   
+        font-size: 130%;
+        width: 100%;
+        padding: 0;
+    }
+
+    /*.rodape
+    {
+        margin-top: 0%;
+        border-top: 0%;
+        padding: 0%;
+    }*/
+}
+
+@media screen and (max-width: 400px)
+{
+    .topnav a, footer a
+    {
+        float: none;
+        width: 100%;
+    }
+}
